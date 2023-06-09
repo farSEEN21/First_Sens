@@ -35,7 +35,8 @@ wd.findElement(By.cssSelector("[href*='og']"));
 wd.findElement(By.cssSelector("[href^='/log']"));
 wd.findElement(By.cssSelector("[href$='in']"));
 
-
+wd.findElement(By.cssSelector("[href='/about'"));
+wd.findElement(By.cssSelector(".active"));
 
     }
 

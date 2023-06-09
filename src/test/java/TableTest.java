@@ -12,15 +12,18 @@ public class TableTest {
     @BeforeMethod
     public void init(){
         wd = new ChromeDriver();
-        wd.navigate().to("http://w3school.com/css/css_table.asp");
+        wd.navigate().to("https://www.w3schools.com/css/css_table.asp");
     }
 
   @Test
     public void testcss(){
 
+//wd.findElement(By.cssSelector("#customers tr:nth-child(7) td:last-child"));
+      System.out.println(wd.findElements(By.cssSelector("#customers tr")).size());
+      System.out.println(wd.findElements(By.cssSelector("#customers th")).size());
+      System.out.println(wd.findElements(By.cssSelector("#customers tr:nth-child(3)")).size());
+      System.out.println(wd.findElements(By.cssSelector("#customers td:last-child")).size());
 
-
-wd.findElement(By.cssSelector("#customers tr:nth-child(7) td:last-child"));
     }
 
 
